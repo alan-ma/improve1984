@@ -1,0 +1,88 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+.intro {
+	overflow: hidden;
+}
+.background {
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	position: absolute;
+	z-index: -1;
+	transition: transform 1s cubic-bezier(.24,.27,.67,.38);
+}
+#dystopia {
+	background: url(img/dystopia.jpg) no-repeat center center fixed;
+	clip-path: polygon(0 0, 0 100%, 40% 45%, 60% 55%, 100% 0, 0 0);
+	-webkit-clip-path: polygon(0 0, 0 100%, 40% 45%, 60% 55%, 100% 0, 0 0);
+}
+#utopia {
+	background: url(img/utopia.jpg) no-repeat center center fixed;
+	clip-path: polygon(100% 0, 60% 55%, 40% 45%, 0 100%, 100% 100%, 100% 0);
+	-webkit-clip-path: polygon(100% 0, 60% 55%, 40% 45%, 0 100%, 100% 100%, 100% 0);
+}
+#slide {
+	width: 40%;
+	height: 100%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	color: #FFF;
+	transition: opacity 2s;
+}
+#slideContent {
+	background-color: rgba(0,0,0,0.7);
+	padding: 0 40px 10px 40px;
+	border-radius: 15px;
+}
+#slide h1 {
+	font-family: "Bungee Shade";
+	text-align: center;
+	font-size: 4rem;
+	font-weight: normal;
+}
+#slide h2 {
+	font-family: "Raleway";
+	text-align: center;
+	font-size: 2rem;
+	font-weight: normal;
+}
+.bad {
+	font-family: "Frijole";
+}
+.good {
+	font-family: "Pacifico";
+}
+#slide button {
+	font-family: "Raleway";
+	font-size: 2rem;
+	color: #FFF;
+	background-color: rgba(0,0,0,0.3);
+	border: 3px solid #000;
+	margin-top: 10%;
+	padding: 15px;
+	opacity: 0;
+	transition: opacity 2s;
+}
+#slide button:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+	box-shadow: 0 0 15px #FFF;
+}
+.content {
+	display: none;
+}
+
+
+
+
+
+
+
+
+
+
